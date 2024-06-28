@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <main class="container1">
+        <section class="logo"></section>
+        <section>
+            <!-- создание блоков форм -->
+            <div class="text1">Заполните форму</div> 
+            <form class="form_bag" id="form">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Фамилия Имя Отчество" name="fio">
+                    <label for="floatingInput">Фамилия Имя Отчество</label>
+                    <div id="fioInvalid" class="invalid-feedback"></div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="phoneInput" placeholder="89012345678" name="phone">
+                    <label for="phoneInput">Номер телефона</label>
+                    <div id="phoneInvalid" class="invalid-feedback"></div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="date" class="form-control" id="startDate" name="startDate">
+                    <label for="startDate">Дата рождения</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="date" class="form-control" id="startDate" name="startDate">
+                    <label for="startDate">Дата приема</label>
+                </div>
+                <div class="form-floating mb-3" >
+                    <input type="time"  class="form-control" name="time">
+                    <label for="time">Время приема</label>
+                </div>
+                <div class="form-check mb-3">
+                    <!-- кнопка записи -->
+                <button type="submit" class="btn btn-primary">Записаться</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© 2024 МедВед</p>
+      </footer>
+    <script src="./main.js"></script>
+</body>
+
+</html>
